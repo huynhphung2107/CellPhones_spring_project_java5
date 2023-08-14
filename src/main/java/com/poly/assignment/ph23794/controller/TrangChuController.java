@@ -13,7 +13,6 @@ public class TrangChuController {
     public String home(Model model){
 //        return "/dashboard/trangAdmin";
         return "/viewform/header1";
-//        update new
     }
 
     @GetMapping("/home")
