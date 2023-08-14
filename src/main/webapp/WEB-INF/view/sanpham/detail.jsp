@@ -28,7 +28,7 @@
       </div>
       <div class="form-group">
           <label>Tên:</label>
-          <label class="form-control">${sp.tenSp}</label>
+          <label class="form-control">${sp.ten}</label>
       </div>
   </div>
 </body>
