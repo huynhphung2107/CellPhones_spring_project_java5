@@ -301,7 +301,7 @@
                         class='bx bx-fingerprint nav_icon'></i><span class="nav_name">Gio Hang</span> </a>
                 <a href="/home" class="nav_link"><i class='bx bx-cart nav_icon'></i><span
                         class="nav_name">Quản lý danh mục</span> </a>
-                <a href="#" class="nav_link"><i class='bx bx-log-out nav_icon'></i> <span
+                <a href="/login" class="nav_link"><i class='bx bx-log-out nav_icon'></i> <span
                         class="nav_name">SignOut</span> </a>
             </div>
         </div>

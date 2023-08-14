@@ -167,7 +167,7 @@
                      Duy trì đăng nhập</label>
 				
 				<input id="submit" type="submit" value="ĐĂNG NHẬP">
-				<p class="message" style="font-size: 18; padding-top:10px"> Chưa có tài khoản? <a href="<c:url value='/register'/> ">Tạo tài khoản mới</a></p>
+				<p class="message" style="font-size: 18px; padding-top:10px"> Chưa có tài khoản? <a href="<c:url value='/register'/> ">Tạo tài khoản mới</a></p>
 			</form>
 		</div>
 	</div>
