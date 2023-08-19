@@ -18,6 +18,14 @@
     <form:form action="/nhan-vien/add" method="post" modelAttribute="nhanVien">
 
         <div class="form-group">
+            <label>Id</label>
+            <br>
+            <form:input cssClass="form-control"  readonly="true" cssStyle="width: 400px" path="id"/>
+            <form:errors cssStyle="color:red;" path="id"/>
+
+        </div>
+
+        <div class="form-group">
             <label>ma</label>
             <br>
             <form:input cssClass="form-control" cssStyle="width: 400px" path="ma"/>

@@ -42,11 +42,11 @@ public class NhanVienServiceImpl implements NhanVienService {
     @Override
     public void add(NhanVienRequest request) {
 
-
         NhanVien sp = NhanVien.builder()
+                .id(request.getId())
                 .ma(request.getMa())
                 .chucVu(chucVuService.getOne(request.getTenCv()))
-                .cuaHang(cuaHangService.getOne(request.getTenCv()))
+                .cuaHang(cuaHangService.getOne(request.getTenCh()))
                 .ho(request.getHo())
                 .tenDem(request.getTenDem())
                 .ten(request.getTen())

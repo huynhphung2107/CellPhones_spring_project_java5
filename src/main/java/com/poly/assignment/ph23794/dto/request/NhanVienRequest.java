@@ -1,6 +1,7 @@
 package com.poly.assignment.ph23794.dto.request;
 
-import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -23,23 +24,23 @@ public class NhanVienRequest {
 
     private String tenCv;
 
-    @NotEmpty(message = "Khong de trong thong tin")
+    @NotBlank(message = "Khong de trong thong tin")
     private String ma;
 
-    @NotEmpty(message = "Khong de trong thong tin")
+    @NotBlank(message = "Khong de trong thong tin")
     private String ho;
 
-    @NotEmpty(message = "Khong de trong thong tin")
+    @NotBlank(message = "Khong de trong thong tin")
     private String tenDem;
 
-    @NotEmpty(message = "Khong de trong thong tin")
+    @NotBlank(message = "Khong de trong thong tin")
     private String ten;
 
     private String gioiTinh;
 
     private String ngaySinh;
 
-    @NotEmpty(message = "Khong de trong thong tin")
+    @NotBlank(message = "Khong de trong thong tin")
     private String diaChi;
 
     private Integer trangThai;

@@ -1,6 +1,7 @@
 package com.poly.assignment.ph23794.controller;
 
 import com.poly.assignment.ph23794.dto.request.NhanVienRequest;
+import com.poly.assignment.ph23794.entity.NhanVien;
 import com.poly.assignment.ph23794.service.NhanVienService;
 import com.poly.assignment.ph23794.service.ChucVuService;
 import com.poly.assignment.ph23794.service.CuaHangService;
@@ -64,7 +65,7 @@ public class NhanVienController {
 
     @PostMapping("/add")
     public String add(Model model,
-                      @Valid @ModelAttribute("nhanVien") NhanVienRequest sp,
+                      @Valid @ModelAttribute("nhanVien") NhanVienRequest nv,
                       BindingResult bindingResult,
                       @RequestParam(value = "pageNo", defaultValue = "0") Integer pageNo
     ) {
@@ -72,13 +73,15 @@ public class NhanVienController {
             System.out.println(bindingResult);
             model.addAttribute("listCh", cuaHangService.getAll1());
             model.addAttribute("listCv", chucVuService.getAll1());
+            System.out.println(bindingResult);
             return "/nhanvien/add";
         }
-        nhanVienService.add(sp);
+       nhanVienService.add(nv);
         model.addAttribute("listCh", cuaHangService.getAll1());
         model.addAttribute("listCv", chucVuService.getAll1());
         model.addAttribute("listNv", nhanVienService.getAll1());
         model.addAttribute("listSp", nhanVienService.getAll(pageNo, 4));
+
 
         return "/nhanvien/nhanvienss";
 
